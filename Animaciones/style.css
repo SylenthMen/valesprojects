@@ -1,0 +1,109 @@
+@keyframes scrollAnimation {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  .element1 {
+    animation: scrollAnimation 1s ease-out infinite;
+  }
+
+  /*-------------*/
+  @keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .element2 {
+    animation: rotateAnimation 3s linear infinite;
+  }
+  
+
+  /*-----------------*/
+
+  @keyframes colorAnimation {
+    0% {
+      background-color: red;
+    }
+    50% {
+      background-color: blue;
+    }
+    100% {
+      background-color: green;
+    }
+  }
+  
+  .element3 {
+    color: #fff;
+    animation: colorAnimation 3s ease-in-out infinite alternate;
+  }
+
+  /*-------------------*/
+
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .element4 {
+    animation: fadeInAnimation 2s ease-out infinite;
+  }
+  
+
+  /*--------------*/
+
+  @keyframes zoomAnimation {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .element5 {
+    animation: zoomAnimation 1.5s ease-out infinite;
+  }
+  
+  /*-------*/
+  /* Estilo base del texto */
+.typewriter-text {
+    overflow: hidden; /* Para que el texto no se muestre de inmediato */
+    border-right: .15em solid orange; /* Efecto de cursor */
+    white-space: nowrap; /* Para que el texto no se divida en múltiples líneas */
+    margin: 0 auto; /* Centrar el texto */
+    letter-spacing: .15em; /* Espaciado entre letras */
+    animation: typing 3.5s steps(40, end) infinite, blink-caret .75s step-end infinite;
+  }
+  
+  /* Animación de escritura */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Animación del cursor */
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
+  
